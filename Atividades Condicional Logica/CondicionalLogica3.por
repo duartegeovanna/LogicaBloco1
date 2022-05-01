@@ -3,27 +3,33 @@ programa
 	
 	funcao inicio()
 	{
-		real indice
+		real n1, n2, n3, n4, Qn1, Qn2, Qn3, Qn4
 
-		escreva("\nDigite o índice de poluição: ")
-		leia(indice)
+		escreva("Digite o primeiro número: ")
+		leia(n1)
 
-		se(indice>=0.3 ou indice<0.4)
-		{
-			escreva("\nIndústrias do 1° grupo devem suspender as atividades")
+		escreva("Digite o segundo número: ")
+		leia(n2)
+
+		escreva("Digite o terceiro número: ")
+		leia(n3)
+
+          escreva("Digite o quarto número: ")
+		leia(n4)
+
+		Qn1 = n1*n1
+		Qn2 = n2*n2
+		Qn3 = n3*n3
+		Qn4 = n4*n4
+
+		se(Qn3>=1000){
+			escreva("O quadrado do terceiro número é: ", Qn3)
 		}
-		senao se(indice>=0.4 ou indice<0.5)
-		{
-			escreva("\nIndústrias do 1° e 2° grupos devem suspender as atividades")
+		senao{
+			escreva("O quadrado de " , n1, " é ", Qn1, "O quadrado de " , n2, " é ", Qn2, "O quadrado de " , n3, " é ", Qn3, "O quadrado de " , n4, " é ", Qn4)
 		}
-		senao se(indice>=0.5)
-		{
-			escreva("\nTodas as indústrias dos 3 grupos devem suspender as atividades")
-		}
-		senao
-		{
-			escreva("\nIndice aceitável")
-		}
+
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 408; 
+ * @POSICAO-CURSOR = 416; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

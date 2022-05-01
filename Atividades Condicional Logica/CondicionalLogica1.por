@@ -3,32 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro idade 
+		
+	real P, E, M
 
-		escreva("\nDigite a sua idade: ")
-		leia(idade)
+	escreva("Peso dos tomates: ")
+	leia(P)
 
-		se (idade==5 ou idade<=7)
-		{
-			escreva("\nInfantil A")
-		}
-		senao se(idade==8 ou idade<=11)
-		{
-			escreva("\nInfantil B")
-		}
-		senao se(idade==12 ou idade<=13)
-		{
-			escreva("\nJuvenil A")
-		}
-		senao se(idade==14 ou idade<=17)
-		{
-			escreva("\nJuvenil B")
-		}
-		senao
-		{
-			escreva("\nAdulto")
-		}
-		escreva("\nFIM DA OPERAÇÃO")
+	se(P>50) {
+		E = P - 50
+		M = E * 4
+		escreva("Há excesso de " + E + " kg e deverá ser paga multa de " + M + " reais")
+	}
+	senao {
+		escreva("Não há multa a ser paga, pois não há excesso de peso.")
+	}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 104; 
+ * @POSICAO-CURSOR = 293; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -4,25 +4,18 @@ programa
 	funcao inicio()
 	{
 		inteiro numero
-
+		
 		escreva("\nDigite o número: ")
 		leia(numero)
 		
-		se(numero%2 == 0)
+		se(numero <= 100)
 		{
-			escreva("\nO número é par")
+			numero=0
+			escreva("\nO número digitado foi: ", numero)
 		}
 		senao
 		{
-			escreva("\nO número é impar")
-		}
-		se(numero >= 0)
-		{
-			escreva("\nO número é positivo")
-		}
-		senao 
-		{
-			escreva("\nO número é negativo")
+			escreva("\nO número digitado foi: ", numero)
 		}
 	}
 }
@@ -31,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 228; 
+ * @POSICAO-CURSOR = 256; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

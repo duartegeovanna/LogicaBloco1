@@ -3,27 +3,32 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro numero
+		inteiro idade 
 
-		escreva("\nDigite o número: ")
-		leia(numero)
-		
-		se(numero%2 == 0)
+		escreva("\nDigite a sua idade: ")
+		leia(idade)
+
+		se (idade==5 ou idade<=7)
 		{
-			escreva("\nO número é par")
+			escreva("\nInfantil A")
+		}
+		senao se(idade==8 ou idade<=11)
+		{
+			escreva("\nInfantil B")
+		}
+		senao se(idade==12 ou idade<=13)
+		{
+			escreva("\nJuvenil A")
+		}
+		senao se(idade==14 ou idade<=17)
+		{
+			escreva("\nJuvenil B")
 		}
 		senao
 		{
-			escreva("\nO número é impar")
+			escreva("\nAdulto")
 		}
-		se(numero >= 0)
-		{
-			escreva("\nO número é positivo")
-		}
-		senao 
-		{
-			escreva("\nO número é negativo")
-		}
+		escreva("\nFIM DA OPERAÇÃO")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 228; 
+ * @POSICAO-CURSOR = 104; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
