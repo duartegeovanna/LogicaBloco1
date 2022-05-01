@@ -3,27 +3,31 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro A, B, C, R, S, D
-		
-
-		escreva("Forneça a: ")
+		inteiro A,B,C,D,E,F,X,Y
+		escreva("Defina valores:")
+		leia(A,B,C,D,E,F)
+		/*
+		escreva("A")
 		leia(A)
-
-		escreva("Forneça b: ")
+		escreva("B")
 		leia(B)
-
-		escreva("Forneça c: ")
+		escreva("C")
 		leia(C)
+		escreva("D")
+		leia(D)
+		escreva("E")
+		leia(E)
+		escreva("F")
+		leia(F)*/
 
-		R = (A + B)
-		R = R*R
+		X=((C*E)-(B*F))/((A*E)-(B*D))
+		Y=((A*F)-(C*D))/((A*E)-(B*D))
+		
+		escreva("\nresultado de x ", X)
+		escreva("\nresultado de y ", Y)
 
-		S = (B+C)
-		S = S*S
-
-		D = (R+S)/2
-
-		escreva("O valor de D é ", D)
+		escreva("\nvalor de C ",(A*X)+(B*Y))
+		escreva("\nvalor de F ",(D*X)+(E*Y))
 		
 	}
 }
@@ -32,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 271; 
+ * @POSICAO-CURSOR = 15; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

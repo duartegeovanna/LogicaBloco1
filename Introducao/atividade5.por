@@ -3,28 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro A, B, C, R, S, D
-		
+		real nota1, nota2, nota3, media, mediapond
 
-		escreva("Forneça a: ")
-		leia(A)
+		escreva("Digite a sua nota 1: ")
+		leia(nota1)
 
-		escreva("Forneça b: ")
-		leia(B)
+		escreva("\nDigite a sua nota 2: ")
+		leia(nota2)
 
-		escreva("Forneça c: ")
-		leia(C)
+		escreva("\nDigite a sua nota 3: ")
+		leia(nota3)
 
-		R = (A + B)
-		R = R*R
+		media = ((nota1*2)+(nota2*3)+(nota3*5))
+		mediapond = media/10
 
-		S = (B+C)
-		S = S*S
-
-		D = (R+S)/2
-
-		escreva("O valor de D é ", D)
-		
+		escreva("\nA sua média ponderada é: " + mediapond)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 271; 
+ * @POSICAO-CURSOR = 356; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,6 +1,6 @@
-programa {
+programa {
 	
-	funcao inicio() {
+	funcao inicio() {
 		inteiro diasDoAno = 365
 		inteiro diasDoMes = 30
 		inteiro dias
@@ -17,7 +17,7 @@ programa {
 		escreva("\nDias: ")
 		leia(dias)
 
-		escreva("\nA sua idade em dias é: " , anos * diasDoAno + meses * diasDoMes)
+		escreva("\nA sua idade em dias é: " , (anos * diasDoAno) + (meses * diasDoMes) + dias)
 		
 	}
 }
@@ -26,7 +26,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 361; 
+ * @POSICAO-CURSOR = 355; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
